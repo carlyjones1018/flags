@@ -110,13 +110,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="15" data-source-offset="-39"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>viewof selected_flag <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(flag_files<span class="op">,</span> {</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a flag:"</span><span class="op">,</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"us.png"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">// Display the selected flag image from the w2560 folder</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;img src="w2560/</span><span class="sc">${</span>selected_flag<span class="sc">}</span><span class="vs">" style="max-width: 500px; border: 1px solid #ccc; margin-top: 1rem;"&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="19" data-source-offset="-39"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>viewof selected_flag <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(flag_files<span class="op">,</span> {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a flag:"</span><span class="op">,</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"us.png"</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">// Display the selected flag image from flags_files/w2560</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;img src="flags_files/w2560/</span><span class="sc">${</span>selected_flag<span class="sc">}</span><span class="vs">" style="max-width: 500px; border: 1px solid #ccc; margin-top: 1rem;"&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -136,7 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </main>
 <!-- /main column -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIERyb3Bkb3duIG1lbnUgdG8gY2hvb3NlIGEgZmxhZyBmaWxlXG52aWV3b2Ygc2VsZWN0ZWRfZmxhZyA9IElucHV0cy5zZWxlY3QoZmxhZ19maWxlcywge1xuICBsYWJlbDogXCJDaG9vc2UgYSBmbGFnOlwiLFxuICB2YWx1ZTogXCJ1cy5wbmdcIlxufSlcblxuLy8gRGlzcGxheSB0aGUgc2VsZWN0ZWQgZmxhZyBpbWFnZSBmcm9tIHRoZSB3MjU2MCBmb2xkZXJcbmh0bWxgPGltZyBzcmM9XCJ3MjU2MC8ke3NlbGVjdGVkX2ZsYWd9XCIgc3R5bGU9XCJtYXgtd2lkdGg6IDUwMHB4OyBib3JkZXI6IDFweCBzb2xpZCAjY2NjOyBtYXJnaW4tdG9wOiAxcmVtO1wiPmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfZmxhZycpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIERyb3Bkb3duIG1lbnUgdG8gY2hvb3NlIGEgZmxhZyBmaWxlXG52aWV3b2Ygc2VsZWN0ZWRfZmxhZyA9IElucHV0cy5zZWxlY3QoZmxhZ19maWxlcywge1xuICBsYWJlbDogXCJDaG9vc2UgYSBmbGFnOlwiLFxuICB2YWx1ZTogXCJ1cy5wbmdcIlxufSlcblxuLy8gRGlzcGxheSB0aGUgc2VsZWN0ZWQgZmxhZyBpbWFnZSBmcm9tIGZsYWdzX2ZpbGVzL3cyNTYwXG5odG1sYDxpbWcgc3JjPVwiZmxhZ3NfZmlsZXMvdzI1NjAvJHtzZWxlY3RlZF9mbGFnfVwiIHN0eWxlPVwibWF4LXdpZHRoOiA1MDBweDsgYm9yZGVyOiAxcHggc29saWQgI2NjYzsgbWFyZ2luLXRvcDogMXJlbTtcIj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2ZsYWcnKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
