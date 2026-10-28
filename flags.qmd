@@ -1,0 +1,24 @@
+---
+title: "Flag Viewer"
+format: html
+resources:
+  - "w2560/*.png"
+execute:
+  echo: false
+---
+
+```{r}
+# Send the list of flag filenames in w2560/ to Observable JS
+ojs_define(flag_files = list.files("w2560"))
+```
+
+```{ojs}
+// Dropdown menu to choose a flag file
+viewof selected_flag = Inputs.select(flag_files, {
+  label: "Choose a flag:",
+  value: "us.png"
+})
+
+// Display the selected flag image from the w2560 folder
+html`<img src="w2560/${selected_flag}" style="max-width: 500px; border: 1px solid #ccc; margin-top: 1rem;">`
+```
